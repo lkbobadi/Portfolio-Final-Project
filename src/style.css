@@ -1,3 +1,46 @@
+:root {
+  --font-title: "Sansita", sans-serif;
+  --body-font: "Sriracha", cursive;
+}
+
 body {
+  background: black;
+}
+
+.hero {
+  padding: 100px 15px;
+  text-align: center;
   background: rgb(205, 241, 245);
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: 90px;
+  color: rgb(16, 0, 109);
+}
+
+h2 {
+  font-family: var(--body-font);
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  font-size: 12px;
+  list-style-type: none;
+  margin: 15px;
+  background: orange;
+  box-shadow: 5px 5px 5px rgb(157, 156, 168);
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.arrow-down {
+  margin: 0 auto;
+  width: 25px;
+  color: rgb(16, 0, 109);
 }
