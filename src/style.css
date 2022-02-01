@@ -7,8 +7,18 @@ body {
   background: rgb(255, 255, 255);
 }
 
+em {
+  color: rgb(194, 68, 68);
+}
+strong {
+  font-weight: 500;
+  color: rgb(16, 0, 109);
+  border-bottom: 2px dotted rgb(16, 0, 109);
+}
+
 .hero {
   padding: 100px 15px;
+  height: 100vh;
   text-align: center;
   background: rgb(205, 241, 245);
 }
@@ -29,18 +39,91 @@ ul {
 }
 
 li {
-  font-size: 12px;
+  font-size: 11px;
   list-style-type: none;
   margin: 15px;
   background: orange;
-  box-shadow: 5px 5px 5px rgb(157, 156, 168);
-  padding: 10px;
+  box-shadow: 3px 3px 5px rgb(157, 156, 168);
+  padding: 8px;
   border-radius: 30px;
   cursor: pointer;
+}
+
+@media (max-width: 430px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  li {
+    margin: 5px;
+    border-radius: 4px;
+  }
 }
 
 .arrow-down {
   margin: 0 auto;
   width: 25px;
   color: rgb(16, 0, 109);
+  transition: 200ms all ease-in-out;
+}
+
+.arrow-down:hover {
+  position: relative;
+  top: 5px;
+}
+
+#about {
+  background: rgb(148, 242, 245);
+  width: 100%;
+  height: 90vh;
+}
+
+.about-info {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: justify;
+}
+
+.information {
+  background: rgb(201, 249, 255);
+  padding: 10px;
+  margin: 10px;
+  width: 400px;
+  border-radius: 5px;
+  border-top: 5px solid orange;
+}
+
+.story {
+  font-size: 12px;
+}
+.stats {
+  background: rgb(201, 249, 255);
+  padding: 10px;
+  margin: 10px;
+  width: 600px;
+  height: auto;
+  border-radius: 5px;
+  border-bottom: 5px solid orange;
+}
+
+.hobbies {
+  padding-left: 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  text-align: center;
+}
+
+@media (max-width: 430px) {
+  .hobbies {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 340px) {
+  .hobbies {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 }
