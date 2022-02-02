@@ -45,7 +45,7 @@ li {
   background: orange;
   box-shadow: 3px 3px 5px rgb(157, 156, 168);
   padding: 8px;
-  border-radius: 30px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -75,7 +75,7 @@ li {
 #about {
   background: rgb(148, 242, 245);
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 }
 
 .about-info {
@@ -126,4 +126,57 @@ li {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
+}
+
+#projects {
+  background: rgb(102, 190, 224);
+  width: 100%;
+  height: auto;
+  padding: 70px 0px;
+  z-index: -11111;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 30vw);
+  grid-auto-rows: auto;
+  justify-content: center;
+  z-index: -2;
+}
+
+.project-list img {
+  width: 100%;
+  padding: 5px;
+  background: #fff;
+  height: 450px;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+@media (max-width: 340px) {
+  .project-list {
+    grid-template-columns: 50vw;
+    grid-template-rows: auto;
+  }
+}
+
+.wrapper {
+  background: #252525;
+  height: 450px;
+}
+.project-description {
+  position: relative;
+  top: -300px;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  z-index: 3;
+  visibility: hidden;
+}
+.wrapper:hover .project-description {
+  z-index: 3;
+  visibility: visible;
+}
+.project-list img:hover {
+  opacity: 0.3;
 }
