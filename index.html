@@ -9,8 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,800;1,400;1,700&family=Sriracha&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 
 
@@ -29,17 +28,40 @@
 
 <body>
 
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="/#about">About</a>
+                    <a class="nav-link" href="/#projects">Projects</a>
+                    <a class="nav-link" href="/#contact">Contact</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
     <header class="hero">
-        <h1 class=" mt-5">Laura Bobadilla</h1>
-        <h2>Frontend Developer</h2>
-        <section class="skills pe-3">
-            <ul>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>Javascript</li>
-                <li>Responsive</li>
-            </ul>
-        </section>
+        <div class="header-info">
+            <h1 class=" mt-5">Laura Bobadilla</h1>
+            <h2>Frontend Developer</h2>
+            <section class="skills pe-3">
+                <ul>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>Javascript</li>
+                    <li>Responsive</li>
+                </ul>
+            </section>
+        </div>
         <div class="arrow-down mt-5">
             <a href="/#about"> <img src="images/angle-double-down-solid.svg"></a>
         </div>
@@ -49,7 +71,7 @@
     <div id="about">
         <div class="container">
             <div class=" about-info row">
-                <section class="information col-sm-4">
+                <section class="information col-sm-4 el ">
                     <h2 class="title">About</h2>
                     Hello, my name is <em>Laura</em>! I'm Filipino-American, and I'm a <strong>Front-end
                         Developer</strong> from
@@ -70,24 +92,11 @@
                         mashing my two interests together and picking up where I left off. Now, here I am
                         - <strong>exactly where I am supposed to be.</strong>
                     </div>
-                </section>
-
-                <section class="stats col-sm-8">
-                    <h2 class="title">Interests</h2>
-                    <ul class="hobbies">
-                        <li> Websites</li>
-                        <li>Languages</li>
-                        <li> Games</li>
-                        <li>Reading</li>
-                        <li>Drawing</li>
-                        <li>Anime/Manga</li>
-                        <li>Cooking</li>
-                        <li>Meditating</li>
-
-                    </ul>
-
+                    <h2 class="funny mt-3">Hobbies</h2>
 
                 </section>
+
+
 
             </div>
         </div>
@@ -100,7 +109,7 @@
 
 
     <div id="projects">
-        <h2 class="text-center">Project List</h2>
+        <h2 class="text-center mb-5">Project List</h2>
         <div class="project-list">
 
 
@@ -110,7 +119,11 @@
                 <div class="project-description">
                     <div class="project-title"> WEATHER APPLICATION</div> <br>
                     TECH: CSS/HTML/Vanilla JS/AXIOS<br>
-                    Inspiration: Nier Automata (PS4);<br>
+                    Inspiration: Nier Automata (PS4);<br><br>
+
+                    <a href="https://dazzling-murdock-36940d.netlify.app/" target="_blank"> >>View Weather App<< </a>
+
+
                 </div>
             </div>
 
@@ -119,6 +132,8 @@
                 <div class="project-description">
                     <div class="project-title">PROGRESS BARS</div> <br>
                     TECH: CSS/HTML/Vanilla JS<br>
+
+
                 </div>
             </div>
 
@@ -138,7 +153,18 @@
 
 
 
+    <script src="path/to/anime.min.js">
 
+
+        let animation = anime({
+            targets: '.information .el',
+            translateX: 200,
+            easing: 'easeInOutQuad',
+            loop: false
+        })
+            ;
+
+    </script>
 
 </body>
 

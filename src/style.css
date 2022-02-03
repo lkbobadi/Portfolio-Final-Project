@@ -1,6 +1,6 @@
 :root {
-  --font-title: "Sansita", sans-serif;
-  --body-font: "Sriracha", cursive;
+  --font-title: "Courier Prime", monospace;
+  --body-font: "Courier Prime", monospace;
 }
 
 body {
@@ -12,25 +12,31 @@ em {
 }
 strong {
   font-weight: 500;
-  color: rgb(16, 0, 109);
-  border-bottom: 2px dotted rgb(16, 0, 109);
+  color: rgb(194, 248, 255);
 }
 
 .hero {
   padding: 100px 15px;
   height: 100vh;
   text-align: center;
-  background: rgb(205, 241, 245);
+  background: url("../images/pexels-alex-conchillos-3648850.jpg");
+  background-size: 100vw;
 }
 
+.header-info {
+  background: rgb(24, 24, 24);
+  width: 70vw;
+  margin: 0 auto;
+}
 h1 {
-  font-family: var(--font-title);
-  font-size: 90px;
-  color: rgb(16, 0, 109);
+  font-family: "Courier Prime", monospace;
+  font-size: 80px;
+  color: rgb(198, 234, 248);
 }
 
 h2 {
   font-family: var(--body-font);
+  color: rgb(63, 66, 68);
 }
 
 ul {
@@ -42,10 +48,10 @@ li {
   font-size: 11px;
   list-style-type: none;
   margin: 15px;
-  background: orange;
-  box-shadow: 3px 3px 5px rgb(157, 156, 168);
+  background: rgb(192, 231, 253);
+  box-shadow: 3px 3px 5px rgb(56, 55, 59);
   padding: 8px;
-  border-radius: 10px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -73,7 +79,7 @@ li {
 }
 
 #about {
-  background: rgb(148, 242, 245);
+  background: rgb(10, 10, 10);
   width: 100%;
   height: 100vh;
 }
@@ -86,25 +92,26 @@ li {
 }
 
 .information {
-  background: rgb(201, 249, 255);
+  background: rgb(27, 27, 27);
+  color: rgb(158, 158, 158);
   padding: 10px;
-  margin: 10px;
+  margin: 100px 10px;
   width: 400px;
   border-radius: 5px;
-  border-top: 5px solid orange;
+  border-top: 5px solid rgb(181, 209, 219);
 }
 
 .story {
   font-size: 12px;
 }
 .stats {
-  background: rgb(201, 249, 255);
+  background: rgb(27, 27, 27);
   padding: 10px;
   margin: 10px;
   width: 600px;
   height: auto;
   border-radius: 5px;
-  border-bottom: 5px solid orange;
+  border-bottom: 5px solid rgb(181, 209, 219);
 }
 
 .hobbies {
@@ -129,7 +136,7 @@ li {
 }
 
 #projects {
-  background: rgb(102, 190, 224);
+  background: rgb(20, 20, 20);
   width: 100%;
   height: auto;
   padding: 70px 0px;
@@ -155,8 +162,7 @@ li {
 
 @media (max-width: 920px) {
   .project-list {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 85%;
     grid-gap: 5px;
   }
 }
@@ -174,7 +180,9 @@ li {
   position: relative;
   top: -300px;
   font-size: 15px;
+  padding: 10px;
   color: #fff;
+  background: #131313;
   text-align: center;
   z-index: 3;
   visibility: hidden;
@@ -197,4 +205,9 @@ li {
   .project-list img {
     opacity: 0.3;
   }
+}
+
+.project-description a {
+  text-decoration: none;
+  color: #fff;
 }
