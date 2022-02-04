@@ -174,7 +174,7 @@ li {
 
 .wrapper {
   background: #131313;
-  height: 450px;
+  height: 100vh;
 }
 
 .project-title {
@@ -212,7 +212,7 @@ li {
   .project-description {
     visibility: visible;
     background: #131313;
-    padding: 30px;
+    padding: 20px;
   }
 
   .project-list img {
@@ -225,13 +225,16 @@ li {
   color: #fff;
 }
 
+#contact {
+  background: #131313;
+  height: 70vh;
+}
 .contact-wrapper {
-  background: #000;
   width: 100vw;
   height: auto;
 }
 
-.contact-list {
+.contact-contents {
   width: 500px;
   margin: 0 auto;
   background-color: rgb(27, 27, 27);
@@ -283,4 +286,27 @@ form {
   width: 100px;
   display: block;
   margin: 0 auto;
+}
+
+@media (max-width: 920px) {
+  #contact {
+    background: #131313;
+    height: 70vh;
+  }
+  .contact-wrapper {
+    width: 80vw;
+    height: auto;
+  }
+
+  .contact-contents {
+    width: 300px;
+    margin: 0 auto;
+    background-color: rgb(27, 27, 27);
+  }
+
+  form {
+    padding: 5px;
+    border: none;
+    color: rgb(158, 158, 158);
+  }
 }

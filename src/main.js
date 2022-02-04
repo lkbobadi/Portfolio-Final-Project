@@ -3,6 +3,7 @@
 })();
 
 let send = document.querySelector("#send");
+let textarea = document.querySelector("textarea");
 
 function sendMail(event) {
   event.preventDefault();
@@ -19,6 +20,12 @@ function sendMail(event) {
   emailjs
     .send("service_s69cb6g", "template_0g9yosq", contactParams)
     .then(function (res) {});
+
+  alert("Your message was sent. I will contact you as soon as I can!");
+
+  if (alert) {
+    textarea.setAttribute = "disabled";
+  }
 }
 
 send.addEventListener("click", sendMail);
