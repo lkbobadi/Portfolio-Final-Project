@@ -152,6 +152,17 @@ li {
   z-index: -2;
 }
 
+.project-list-response {
+  background: rgb(3, 3, 3);
+  display: flex;
+  flex-direction: row;
+  grid-auto-rows: auto;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
+  visibility: none;
+}
+
 .project-list img {
   width: 100%;
   padding: 5px;
@@ -166,8 +177,21 @@ li {
 }
 @media (max-width: 920px) {
   .project-list {
-    grid-template-columns: 85%;
-    grid-gap: 5px;
+    display: none;
+  }
+
+  .project-list-response {
+    display: visible;
+  }
+}
+
+@media (min-width: 1280px) {
+  .project-list {
+    display: visible;
+  }
+
+  .project-list-response {
+    display: none;
   }
 }
 
@@ -189,7 +213,6 @@ li {
   background: #131313;
   text-align: center;
   z-index: 3;
-  visibility: hidden;
 }
 
 .project-tech-list {
