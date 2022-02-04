@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6a839c62b7.js" crossorigin="anonymous"></script>
 
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap"
@@ -22,6 +24,7 @@
 
 
     <link rel="stylesheet" href="src/style.css">
+
     <title>Frontend Developer - Laura Bobadilla</title>
     <meta name="description" content="Frontend Developer Portfolio site about Laura Bobadilla from North Carolina, USA">
 </head>
@@ -31,7 +34,7 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">LAURA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,9 +53,18 @@
 
 
     <header class="hero">
-        <div class="header-info">
-            <h1 class=" mt-5">Laura Bobadilla</h1>
-            <h2>Frontend Developer</h2>
+
+
+
+
+
+        <div class="header-info" style="margin-top: 150px">
+            <div class="window-top">
+                <span class="window-x">x</span>
+                BOBADILLA.EXE
+            </div>
+            <h1>Laura</h1>
+            <h2 style="margin-top:-30px;">Frontend Developer</h2>
             <section class="skills pe-3">
                 <ul>
                     <li>CSS</li>
@@ -62,7 +74,7 @@
                 </ul>
             </section>
         </div>
-        <div class="arrow-down mt-5">
+        <div class="arrow-down">
             <a href="/#about"> <img src="images/angle-double-down-solid.svg"></a>
         </div>
     </header>
@@ -70,8 +82,15 @@
 
     <div id="about">
         <div class="container">
-            <div class=" about-info row">
-                <section class="information col-sm-4 el ">
+            <div class=" about-info row ">
+
+                <div class="window-top">
+                    <span class="window-x">x</span>
+                    INFORMATION.EXE
+                </div>
+
+                <section class="information col-sm-4">
+
                     <h2 class="title">About</h2>
                     Hello, my name is <em>Laura</em>! I'm Filipino-American, and I'm a <strong>Front-end
                         Developer</strong> from
@@ -84,17 +103,20 @@
                         enjoyed
                         <em>learning languages and
                             loved art the most</em>.
-                        <br>
-                        <br>I grew up enthralled with editing themes in Tumblr, Carrd, and...dare I
-                        mention...Xanga, but
-                        I never considered it as realistically something I could do for work. <em>Maaaannnyyy</em> years
-                        later, I am
-                        mashing my two interests together and picking up where I left off. Now, here I am
-                        - <strong>exactly where I am supposed to be.</strong>
+
                     </div>
-                    <h2 class="funny mt-3">Hobbies</h2>
+                    <h2 class="funny mt-3">
+                        <ul>
+                            <li>Websites</li>
+                            <li>Reading</li>
+                            <li>Drawing</li>
+                            <li>Meditating</li>
+                        </ul>
+                    </h2>
 
                 </section>
+
+
 
 
 
@@ -117,10 +139,11 @@
             <div class="wrapper">
                 <img src="/images/WeatherApplication.PNG">
                 <div class="project-description">
-                    <div class="project-title"> WEATHER APPLICATION</div> <br>
-                    TECH: CSS/HTML/Vanilla JS/AXIOS<br>
-                    Inspiration: Nier Automata (PS4);<br><br>
+                    <div class="project-title"> WEATHER APPLICATION</div>
 
+                    <div class="project-tech-list">
+                        CSS/HTML/Vanilla JS/AXIOS
+                    </div>
                     <a href="https://dazzling-murdock-36940d.netlify.app/" target="_blank"> >>View Weather App<< </a>
 
 
@@ -130,8 +153,10 @@
             <div class="wrapper">
                 <img src="/images/Progress Bars - Self.PNG">
                 <div class="project-description">
-                    <div class="project-title">PROGRESS BARS</div> <br>
-                    TECH: CSS/HTML/Vanilla JS<br>
+                    <div class="project-title">PROGRESS BARS</div>
+                    <div class="project-tech-list">
+                        CSS/HTML/Vanilla JS
+                    </div>
 
 
                 </div>
@@ -140,31 +165,25 @@
             <div class="wrapper">
                 <img src="/images/ButtonExperiment-Self.PNG">
                 <div class="project-description">
-                    <div class="project-title"> BUTTON CLASSES </div><br>
-                    TECH: CSS/HTML/Vanilla JS<br>
+                    <div class="project-title"> BUTTON CLASSES </div>
+                    <div class="project-tech-list">
+                        CSS/HTML/Vanilla JS
+                    </div>
                 </div>
             </div>
+
 
 
         </div>
     </div>
 
+    <div class="wrapper">
+        <section id="contact">
+            <h2 class="text-center">Contact Me</h2>
+        </section>
+    </div>
 
 
-
-
-    <script src="path/to/anime.min.js">
-
-
-        let animation = anime({
-            targets: '.information .el',
-            translateX: 200,
-            easing: 'easeInOutQuad',
-            loop: false
-        })
-            ;
-
-    </script>
 
 </body>
 
