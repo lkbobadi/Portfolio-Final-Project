@@ -140,7 +140,7 @@ li {
 /*PROJECT LIST */
 
 #projects {
-  background: rgb(48, 48, 48);
+  background: rgb(12, 12, 12);
   width: 100%;
   height: auto;
   padding: 50px 0px;
@@ -196,8 +196,12 @@ li {
 }
 
 @media (max-width: 920px) {
+  .project-list img {
+    display: none;
+    height: 10px;
+  }
   .project-list {
-    grid-template-columns: 80vw;
+    grid-template-columns: 70vw;
   }
 }
 
@@ -221,6 +225,14 @@ li {
   width: 500px;
   margin: 0 auto;
   background-color: rgb(27, 27, 27);
+}
+
+@media (max-width: 920px) {
+  .contact-contents {
+    width: 250px;
+    background-color: rgb(27, 27, 27);
+    margin: 0 auto;
+  }
 }
 
 form {
