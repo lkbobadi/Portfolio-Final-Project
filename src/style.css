@@ -153,6 +153,7 @@ li {
   grid-gap: 10px;
   grid-auto-rows: auto;
   justify-content: center;
+  text-align: center;
   z-index: -2;
 }
 
@@ -171,6 +172,11 @@ li {
   border: #000;
 }
 
+@media (max-width: 920px) {
+  .wrapper {
+    height: 200px;
+  }
+}
 .project-title {
   font-family: var(--font-title);
   font-size: 30px;
@@ -201,7 +207,7 @@ li {
     height: 10px;
   }
   .project-list {
-    grid-template-columns: 70vw;
+    grid-template-columns: 50vw;
   }
 }
 
@@ -229,7 +235,7 @@ li {
 
 @media (max-width: 920px) {
   .contact-contents {
-    width: 250px;
+    width: 50vw;
     background-color: rgb(27, 27, 27);
     margin: 0 auto;
   }
