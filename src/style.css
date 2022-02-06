@@ -93,7 +93,7 @@ li {
     background: transparent;
     box-shadow: none;
     margin: 0 auto;
-    justify-content: center;
+    width: 100%;
   }
 
   ul {
@@ -113,9 +113,8 @@ li {
 }
 
 .skills {
-  padding-left: 5px;
   margin: 0 auto;
-  padding: 5px;
+  width: 100%;
 }
 
 .about-info {
