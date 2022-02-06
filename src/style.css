@@ -1,6 +1,10 @@
 :root {
   --font-title: "Caveat", cursive;
   --body-font: "Courier Prime", monospace;
+  --background-darkest: #000;
+  --background-dark-info: rgb(24, 24, 24);
+  --background-second-darkest: rgb(27, 27, 27);
+  --background-dark-middle: rgb(10, 10, 10);
 }
 
 body {
@@ -37,11 +41,13 @@ strong {
   height: 100vh;
   text-align: center;
   background-size: 100vw;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-darkest);
 }
 
 .header-info {
-  background: rgb(24, 24, 24);
+  position: relative;
+  top: 50px;
+  background: var(--background-dark-info);
   width: 70vw;
   margin: 0 auto;
 }
@@ -84,30 +90,19 @@ li {
   }
 }
 
-.arrow-down {
-  margin: 0 auto;
-  width: 25px;
-}
-
-.arrow-down:hover {
-  position: relative;
-  top: 5px;
-}
-
 #about {
-  background: rgb(10, 10, 10);
+  padding: 70px 0 70px 0;
+  margin: 0 auto;
+  background: var(--background-dark-middle);
   width: 100%;
   height: 100vh;
 }
 
 .about-info {
-  position: relative;
-  top: 150px;
   margin: 0 auto;
-  width: 500px;
+  width: 450px;
   display: flex;
   justify-content: center;
-  padding: 10px;
   text-align: justify;
 }
 
@@ -118,7 +113,7 @@ li {
 }
 
 .information {
-  background: rgb(27, 27, 27);
+  background: var(--background-second-darkest);
   color: rgb(158, 158, 158);
   padding: 10px;
   width: 500px;
@@ -128,7 +123,7 @@ li {
   font-size: 12px;
 }
 .stats {
-  background: rgb(27, 27, 27);
+  background: var(--background-second-darkest);
   padding: 10px;
   margin: 10px;
   width: 600px;
@@ -140,10 +135,9 @@ li {
 /*PROJECT LIST */
 
 #projects {
-  background: rgb(12, 12, 12);
+  background: var(--background-second-darkest);
   width: 100%;
-  height: auto;
-  padding: 50px 0px;
+  padding: 70px 0 70px 0;
   z-index: -11111;
 }
 
@@ -160,7 +154,7 @@ li {
 .project-list img {
   width: 100%;
   padding: 5px;
-  background: rgb(19, 19, 19);
+  background: var(--background-second-darkest);
   height: 250px;
   transition: all 200ms ease-in-out;
   cursor: pointer;
@@ -183,7 +177,7 @@ li {
 }
 
 .project-description {
-  background: rgb(19, 19, 19);
+  background: var(--background-darkest);
   color: #fff;
   font-size: 12px;
 }
@@ -196,7 +190,7 @@ li {
 
 .project-technology-list {
   background: #fff;
-  color: #000;
+  color: var(--background-dark-info);
   width: 50%;
   margin: 0 auto;
 }
@@ -219,24 +213,25 @@ li {
 
 /*CONTACT */
 #contact {
-  background: #131313;
-  height: 70vh;
+  height: auto;
+  background-color: var(--background-dark-middle);
 }
 .contact-wrapper {
   width: 100vw;
   height: auto;
+  background-color: var(--background-darkest);
 }
 
 .contact-contents {
   width: 500px;
   margin: 0 auto;
-  background-color: rgb(27, 27, 27);
+  background-color: var(--background-dark-info);
 }
 
 @media (max-width: 920px) {
   .contact-contents {
     width: 50vw;
-    background-color: rgb(27, 27, 27);
+    background-color: var(--background-dark-middle);
     margin: 0 auto;
   }
 }
@@ -248,32 +243,32 @@ form {
 }
 
 #fromName {
-  background: rgb(27, 27, 27);
+  background: var(--background-second-darkest);
   border: 1px solid rgb(65, 65, 65);
   color: #fff;
   width: 100%;
 }
 
 #fromName:placeholder {
-  color: rgb(12, 11, 11);
+  color: var(--background-second-darkest);
 }
 
 #user_email {
-  background: rgb(27, 27, 27);
+  background: var(--background-dark-info);
   border: 1px solid rgb(65, 65, 65);
   color: #fff;
   width: 100%;
 }
 
 #user_email::placeholder {
-  color: rgb(12, 11, 11);
+  color: var(--background-second-darkest);
 }
 
 #message {
   width: 100%;
   height: 200px;
   border: 1px solid rgb(65, 65, 65);
-  background: rgb(27, 27, 27);
+  background: var(--background-dark-info);
   color: #fff;
   font-family: var(--body-font);
   font-size: 12px;
@@ -281,7 +276,7 @@ form {
 
 #send {
   font-family: var(--body-font);
-  background: rgb(10, 10, 10);
+  background: var(--background-darkest);
   border: none;
   color: #fff;
   width: 100px;
@@ -291,17 +286,17 @@ form {
 
 @media (max-width: 920px) {
   #contact {
-    background: #131313;
-    height: 70vh;
+    background: var(--background-dark-info);
+    height: auto;
   }
   .contact-wrapper {
-    width: 80vw;
+    width: 70vw;
     height: auto;
   }
 
   .contact-contents {
     width: 300px;
-    background-color: rgb(27, 27, 27);
+    background-color: var(--background-dark-info);
     margin: 0 auto;
   }
 
@@ -312,11 +307,15 @@ form {
   }
 }
 
+#footer-contents {
+  height: auto;
+  background-color: var(--background-darkest);
+}
 footer {
   display: flex;
   flex-direction: row;
-  padding: 70px;
-  background-color: rgb(27, 27, 27);
+  padding: 50px;
+  background-color: var(--background-dark-info);
   text-align: center;
   transition: all 200ms ease-in-out;
   justify-content: center;
@@ -327,6 +326,7 @@ footer a {
   color: rgb(156, 156, 156);
   padding: 10px;
   font-size: 30px;
+  transition: all 200ms ease-in-out;
 }
 
 footer a:hover {

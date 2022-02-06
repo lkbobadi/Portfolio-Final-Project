@@ -21,10 +21,19 @@ function sendMail(event) {
     .send("service_s69cb6g", "template_0g9yosq", contactParams)
     .then(function (res) {});
 
-  alert("Your message was sent. I will contact you as soon as I can!");
+  textarea.disabled = true;
 
-  if (alert) {
-    textarea.setAttribute = "disabled";
+  if ((textarea.disabled = true)) {
+    setTimeout(closeForm, 3000);
+  }
+}
+
+function closeForm() {
+  if (textarea.disabled == true) {
+    let form = document.querySelector(".form");
+    form.replaceWith(
+      `Thank you for the message! I will respond to you quickly!`
+    );
   }
 }
 
