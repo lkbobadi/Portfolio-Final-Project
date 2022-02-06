@@ -66,18 +66,18 @@ h2 {
 
 ul {
   display: flex;
+  justify-content: center;
   padding-left: 0;
-
   text-align: center;
 }
 
 li {
   font-size: 11px;
   list-style-type: none;
-  margin: 0 auto;
+  margin: 10px;
   background: rgb(255, 255, 255);
   box-shadow: 3px 3px 5px rgb(56, 55, 59);
-  padding: 8px;
+  padding: 5px;
   width: 100px;
   cursor: pointer;
 }
@@ -88,7 +88,19 @@ li {
   }
 
   li {
-    margin: 5px;
+    list-style-type: none;
+    color: #fff;
+    background: transparent;
+    box-shadow: none;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  ul {
+    flex-direction: column;
+    display: block;
+    align-items: center;
+    width: 100%;
   }
 }
 
