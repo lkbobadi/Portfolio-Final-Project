@@ -41,6 +41,7 @@ strong {
   padding: 100px 15px;
   height: 100vh;
   text-align: center;
+  padding-left: 0;
   background-size: 100vw;
   background-color: var(--background-darkest);
 }
