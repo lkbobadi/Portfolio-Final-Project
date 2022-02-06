@@ -32,7 +32,7 @@ function closeForm() {
   if (textarea.disabled == true) {
     let form = document.querySelector(".form");
     form.replaceWith(
-      `Thank you for the message! I will respond to you quickly!`
+      `Thank you for sending this message, I will get back to you soon!`
     );
   }
 }
