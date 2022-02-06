@@ -1,5 +1,6 @@
 :root {
   --font-title: "Caveat", cursive;
+  --accent: rgb(194, 68, 68);
   --body-font: "Courier Prime", monospace;
   --background-darkest: #000;
   --background-dark-info: rgb(24, 24, 24);
@@ -54,25 +55,25 @@ strong {
 h1 {
   font-family: var(--font-title);
   font-size: 100px;
-  color: rgb(255, 255, 255);
+  color: var(--accent);
 }
 
 h2 {
   font-family: var(--body-font);
-  color: rgb(63, 66, 68);
+  color: rgb(93, 93, 94);
 }
 
 ul {
   display: flex;
-  justify-content: center;
   padding-left: 0;
+
   text-align: center;
 }
 
 li {
   font-size: 11px;
   list-style-type: none;
-  margin: 15px;
+  margin: 0 auto;
   background: rgb(255, 255, 255);
   box-shadow: 3px 3px 5px rgb(56, 55, 59);
   padding: 8px;
@@ -98,17 +99,27 @@ li {
   height: 100vh;
 }
 
+.skills {
+  padding-left: 5px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
 .about-info {
   margin: 0 auto;
-  width: 450px;
-  display: flex;
+  width: 60vw;
   justify-content: center;
   text-align: justify;
 }
 
 @media (max-width: 920px) {
   .about-info {
-    width: 350px;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .about-info li {
+    padding: 5px;
   }
 }
 
@@ -121,6 +132,10 @@ li {
 
 .story {
   font-size: 12px;
+}
+
+.hobbies {
+  padding-left: 5px;
 }
 .stats {
   background: var(--background-second-darkest);
@@ -214,6 +229,7 @@ li {
 /*CONTACT */
 #contact {
   height: auto;
+  color: rgb(156, 156, 156);
   background-color: var(--background-dark-middle);
 }
 .contact-wrapper {
@@ -223,7 +239,7 @@ li {
 }
 
 .contact-contents {
-  width: 500px;
+  width: 60vw;
   margin: 0 auto;
   background-color: var(--background-dark-info);
 }
